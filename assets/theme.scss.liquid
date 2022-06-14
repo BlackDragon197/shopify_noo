@@ -1,0 +1,36 @@
+@media screen and (min-width: 1024px) {
+  .header-button{
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header-button{
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  }
+}
+
+.header-button{
+  border-radius: 3px;
+  text-decoration: none; 
+  background: {{settings.buttons_color}};
+  color: {{settings.buttons_text_color}}
+}
+
+.header-section {
+  background: {{ settings.header_background_color }};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: {{settings.header_height}}px
+}
+
+body{
+ margin: 0 
+}
