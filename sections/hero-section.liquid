@@ -18,7 +18,7 @@
   
     <div class="relative">
       {% if section.settings.title != blank %}
-        <h2 class="uppercase text-center md:text-[40px] text-xl">{{ section.settings.title | escape }}</h2>
+        <h2 class="uppercase text-center md:text-[35px] text-xl leading-9 md:leading-10">{{ section.settings.title | escape }}</h2>
       {% endif %}
 
       {% if section.settings.text != blank %}
@@ -62,7 +62,10 @@
         "type": "text",
         "id": "title",
         "label": "Heading",
-        "default": "Hero Image"
+        "default": "SAVE UP TO 55% ON NOOCUBE
+        EGG-CELLENT EASTER DEALS
+        OUT NOW
+        "
       },
       {
         "type": "richtext",

@@ -620,6 +620,9 @@ video {
 .italic {
   font-style: italic;
 }
+.leading-9 {
+  line-height: 2.25rem;
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -647,7 +650,11 @@ video {
     padding-right: 4rem;
   }
 
-  .md\:text-\[40px\] {
-    font-size: 40px;
+  .md\:text-\[35px\] {
+    font-size: 35px;
+  }
+
+  .md\:leading-10 {
+    line-height: 2.5rem;
   }
 }
