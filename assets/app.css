@@ -562,6 +562,9 @@ video {
 .hidden {
   display: none;
 }
+.w-full {
+  width: 100%;
+}
 .max-w-1410 {
   max-width: 1410px;
 }
@@ -597,9 +600,9 @@ video {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .font-bold {
   font-weight: 700;

@@ -11,7 +11,7 @@
   - Home page only: only shows on the home page
 {%- endcomment -%}
 <section class="header-section flex items-center justify-center px-4 sm:px-3" data-section-id="{{ section.id }}" data-section-type="header">
-  <div class="flex items-center justify-between max-w-1410">
+  <div class="flex items-center justify-between max-w-1410 w-full">
   {%- if section.settings.announcement_bar_enabled -%}
     <div>
       {%- if section.settings.announcement_bar_home_page_only == false or template.name == 'index' -%}
@@ -99,7 +99,7 @@
     {% endcomment%}
   </header>
 <div class="">
-  <a class="text-white flex items-center md:py-2 md:px-16 py-1 px-10 rounded-rounded-3 font-bold bg-green-500 uppercase" href="#some_id">
+  <a class="text-white flex items-center md:py-2 md:px-16 py-1 px-12 rounded-rounded-3 font-bold bg-green-500 uppercase" href="#some_id">
     Shop Now
   </a>
 </div>
