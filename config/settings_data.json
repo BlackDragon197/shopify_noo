@@ -66,6 +66,7 @@
       "165531059468e5c8e7": {
         "type": "hero-section",
         "settings": {
+          "image": "shopify:\/\/shop_images\/Main_image.png",
           "layout": "left",
           "title": "Hero Image",
           "text": "<p>Hero image + text block<\/p>",
