@@ -20,6 +20,7 @@
                 {% if section.settings.image != blank %}
                 {% include 'responsive-image' with
                     image: section.settings.image,
+                    image_class: "img",
                     max_width: 703,
                     max_height: 713
                 %}
