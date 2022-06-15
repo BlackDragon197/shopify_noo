@@ -11,7 +11,7 @@
   - Home page only: only shows on the home page
 {%- endcomment -%}
 <section class="header-section px-4 sm:px-3" data-section-id="{{ section.id }}" data-section-type="header">
-  <div class="flex items-center justify-center">
+  <div class="flex items-center justify-between">
   {%- if section.settings.announcement_bar_enabled -%}
     <div>
       {%- if section.settings.announcement_bar_home_page_only == false or template.name == 'index' -%}

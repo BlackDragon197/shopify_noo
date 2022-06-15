@@ -571,6 +571,9 @@ video {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
