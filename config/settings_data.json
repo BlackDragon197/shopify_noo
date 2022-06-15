@@ -68,10 +68,8 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/Main_image.png",
           "layout": "left",
-          "title": "Hero Image",
-          "text": "<p>SAVE UP TO 55% ON NOOCUBE
-          EGG-CELLENT EASTER DEALS
-          OUT NOW</p>",
+          "title": "SAVE UP TO 55% ON NOOCUB EGG-CELLENT EASTER DEALS OUT NOW",
+          "text": "<p>Hero image + text block<\/p>",
           "button_label": "",
           "button_link": ""
         }
