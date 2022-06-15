@@ -643,8 +643,8 @@ video {
 }
 @media (min-width: 1024px) {
 
-  .md\:visible {
-    visibility: visible;
+  .md\:block {
+    display: block;
   }
 
   .md\:hidden {
