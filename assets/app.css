@@ -540,6 +540,9 @@ video {
     max-width: 1440px;
   }
 }
+.visible {
+  visibility: visible;
+}
 .relative {
   position: relative;
 }
@@ -639,6 +642,14 @@ video {
   }
 }
 @media (min-width: 1024px) {
+
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

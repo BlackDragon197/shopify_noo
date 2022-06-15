@@ -1,5 +1,19 @@
 <section class="bg-red-500 clip grid items-center grid-cols-1 mx-auto md:grid-cols-2 md:max-w-3xl lg:max-w-4xl xl:max-w-6xld">
     
+  <div class="relative visible md:hidden ">
+    {% if section.settings.title != blank %}
+      <h2 class="uppercase text-center md:text-[40px] sm:text-[35px] md:leading-10 leading-9">{{ section.settings.title | escape }}</h2>
+    {% endif %}
+
+    {% if section.settings.text != blank %}
+      <div>{{ section.settings.text }}</div>
+    {% endif %}
+    {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}">
+        {{ section.settings.button_label | escape }}
+      </a>
+    {% endif %}
+  </div>
       <div class="grid">
         <div class="flex items-center justify-center">
             <div class="relative">
@@ -16,7 +30,7 @@
       </div>
     </div>
   
-    <div class="relative">
+    <div class="relative hidden md:visible">
       {% if section.settings.title != blank %}
         <h2 class="uppercase text-center md:text-[40px] sm:text-[35px] md:leading-10 leading-9">{{ section.settings.title | escape }}</h2>
       {% endif %}
