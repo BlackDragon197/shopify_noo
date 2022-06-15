@@ -18,8 +18,9 @@
   
     <div class="relative">
       {% if section.settings.title != blank %}
-        <h2>{{ section.settings.title | escape }}</h2>
+        <h2 class="uppercase text-center md:text-[40px] text-xl">{{ section.settings.title | escape }}</h2>
       {% endif %}
+
       {% if section.settings.text != blank %}
         <div>{{ section.settings.text }}</div>
       {% endif %}
