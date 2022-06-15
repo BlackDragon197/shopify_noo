@@ -12,6 +12,9 @@ module.exports = {
     './templates/customers/*.liquid',
   ],
   theme: {
+    borderRadius:{
+      'rounded-3': '3px',
+    },
     extend: {},
     screens: {
       'sm': '768px',
