@@ -16,6 +16,13 @@
   }
 }
 
+@media (max-width: 767px) {
+  .header-button{
+    height: 30px
+  }
+  ;
+}
+
 .header-button{
   border-radius: 3px;
   text-decoration: none; 
