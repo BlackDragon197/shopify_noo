@@ -12,6 +12,9 @@ module.exports = {
     './templates/customers/*.liquid',
   ],
   theme: {
+    maxWidth:{
+      '1410': '1410px'
+    },
     borderRadius:{
       'rounded-3': '3px',
     },

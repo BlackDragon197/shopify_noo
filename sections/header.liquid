@@ -10,8 +10,8 @@
   Theme Store optional settings
   - Home page only: only shows on the home page
 {%- endcomment -%}
-<section class="header-section px-4 sm:px-3" data-section-id="{{ section.id }}" data-section-type="header">
-  <div class="flex items-center justify-between">
+<section class="header-section flex items-center justify-center px-4 sm:px-3" data-section-id="{{ section.id }}" data-section-type="header">
+  <div class="flex items-center justify-between max-w-1410">
   {%- if section.settings.announcement_bar_enabled -%}
     <div>
       {%- if section.settings.announcement_bar_home_page_only == false or template.name == 'index' -%}
