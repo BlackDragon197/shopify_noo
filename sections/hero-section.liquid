@@ -1,0 +1,78 @@
+<section class="grid items-center grid-cols-1 mx-auto md:grid-cols-2 md:max-w-3xl lg:max-w-4xl xl:max-w-6xld">
+    
+      <div class="grid">
+        <div class="flex items-center justify-center">
+            <div class="relative">
+                {% if section.settings.image != blank %}
+                {% include 'responsive-image' with
+                    image: section.settings.image,
+                    max_width: 545,
+                    max_height: 545
+                %}
+                {% else %}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+            </div>
+            <div class="absolute -top-5 -right-7">
+                <img src="/assets/Lutemax-1.png" srcset="/assets/Lutemax-1.png 1x, /assets/Lutemax-1.png 2x"/>
+            </div>
+      </div>
+    </div>
+  
+    <div class="relative">
+      {% if section.settings.title != blank %}
+        <h2>{{ section.settings.title | escape }}</h2>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <div>{{ section.settings.text }}</div>
+      {% endif %}
+      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}">
+          {{ section.settings.button_label | escape }}
+        </a>
+      {% endif %}
+    </div>
+
+  </section>
+
+  {% schema %}
+  {
+    "name": "Hero section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p></p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero image",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
