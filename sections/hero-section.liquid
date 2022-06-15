@@ -37,25 +37,40 @@
 
   {% schema %}
   {
-    "name": "Hero section",
+    "name": "Hero Image",
     "settings": [
       {
         "type": "image_picker",
         "id": "image",
         "label": "Image"
       },
-
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Image alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
       {
         "type": "text",
         "id": "title",
         "label": "Heading",
-        "default": "Heading"
+        "default": "Hero Image"
       },
       {
         "type": "richtext",
         "id": "text",
         "label": "Text",
-        "default": "<p></p>"
+        "default": "<p>Hero image + text block</p>"
       },
       {
         "type": "text",
@@ -70,7 +85,7 @@
     ],
     "presets": [
       {
-        "name": "Hero image",
+        "name": "Hero Image",
         "category": "Image"
       }
     ]
