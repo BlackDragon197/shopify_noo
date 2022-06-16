@@ -40,6 +40,18 @@
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               {% endif %}
           </div>
+          <div class="absolute top-0 right-0">
+            {% if section.settings.image2 != blank %}
+            {% include 'responsive-image-mobile' with
+                image: section.settings.image2,
+                image_class: "img",
+                max_width: 90,
+                max_height: 90
+            %}
+            {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+        </div>
       </div>
     </div>
   
@@ -68,6 +80,10 @@
         "type": "image_picker",
         "id": "image",
         "label": "Image"
+      },{
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Image-2"
       },
       {
         "type": "select",
