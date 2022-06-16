@@ -581,6 +581,9 @@ video {
 .min-w-\[3rem\] {
   min-width: 3rem;
 }
+.min-w-\[3\.5rem\] {
+  min-width: 3.5rem;
+}
 .max-w-1410 {
   max-width: 1410px;
 }
