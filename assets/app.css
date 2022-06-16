@@ -566,6 +566,9 @@ video {
 .hidden {
   display: none;
 }
+.h-12 {
+  height: 3rem;
+}
 .w-full {
   width: 100%;
 }
@@ -595,6 +598,9 @@ video {
 }
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-center {
   justify-content: center;
