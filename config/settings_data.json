@@ -74,18 +74,17 @@
           "button_link": ""
         }
       },
-      "1655415682d99f06c9": {
-        "type": "featured-product",
+      "1655418599ba041d04": {
+        "type": "featured-collection",
         "settings": {
-          "product1": "test-product",
-          "product2": "",
-          "product3": "test-product"
+          "title": "Featured collection",
+          "collection": "main"
         }
       }
     },
     "content_for_index": [
       "165531059468e5c8e7",
-      "1655415682d99f06c9"
+      "1655418599ba041d04"
     ]
   },
   "presets": {
