@@ -672,6 +672,10 @@ video {
 .text-\[26px\] {
   font-size: 26px;
 }
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -736,5 +740,15 @@ video {
 
   .md\:leading-10 {
     line-height: 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+
+  .lg\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:text-\[1\.4rem\] {
+    font-size: 1.4rem;
   }
 }
