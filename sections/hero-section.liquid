@@ -79,6 +79,7 @@
         <h2 class="font-bold uppercase text-white text-center md:text-[35px] text-[26px] md:leading-10 leading-9">{{ section.settings.title | escape }}</h2>
       {% endif %}
 
+
       <div class="flex flex-col">
       <div class="relative mx-6 flex flex-row justify-center">
           <div class="flex items-end">
@@ -128,7 +129,22 @@
         "id": "image",
         "label": "Image"
       },
-
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Image alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
       {
         "type": "text",
         "id": "title",
@@ -141,6 +157,16 @@
         "label": "Text",
         "default": "<p>Hero image + text block</p>"
       },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
     ],
     "presets": [
       {
