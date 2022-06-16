@@ -575,6 +575,9 @@ video {
 .max-w-1410 {
   max-width: 1410px;
 }
+.basis-2 {
+  flex-basis: 20%;
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }

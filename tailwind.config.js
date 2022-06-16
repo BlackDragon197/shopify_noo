@@ -21,7 +21,12 @@ module.exports = {
     borderRadius:{
       'rounded-3': '3px',
     },
-    extend: {},
+    extend: {
+      flexBasis:{
+        "1": "10%",
+        "2": "20%"
+      }
+    },
     screens: {
       'sm': '768px',
       'md': '1024px',
