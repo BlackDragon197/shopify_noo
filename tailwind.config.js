@@ -16,7 +16,8 @@ module.exports = {
       "futura": "Futura PT"
     },
     maxWidth:{
-      '1410': '1410px'
+      '1410': '1410px',
+      '380': '380px'
     },
     borderRadius:{
       'rounded-3': '3px',
