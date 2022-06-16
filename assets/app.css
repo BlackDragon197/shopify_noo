@@ -712,6 +712,9 @@ video {
 .text-\[26px\] {
   font-size: 26px;
 }
+.text-\[20px\] {
+  font-size: 20px;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -751,6 +754,10 @@ video {
 
   .sm\:text-\[35px\] {
     font-size: 35px;
+  }
+
+  .sm\:text-\[22px\] {
+    font-size: 22px;
   }
 }
 @media (min-width: 1024px) {
