@@ -22,10 +22,6 @@ module.exports = {
       'rounded-3': '3px',
     },
     extend: {
-      flexBasis:{
-        "1": "10%",
-        "2": "20%"
-      }
     },
     screens: {
       'sm': '768px',
