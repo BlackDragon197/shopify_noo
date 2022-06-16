@@ -551,6 +551,10 @@ video {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -663,6 +667,9 @@ video {
 .pl-2 {
   padding-left: 0.5rem;
 }
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
 }
@@ -750,5 +757,9 @@ video {
 
   .lg\:text-\[1\.4rem\] {
     font-size: 1.4rem;
+  }
+
+  .lg\:font-extrabold {
+    font-weight: 800;
   }
 }
