@@ -5,14 +5,8 @@
       <h2 class=" font-bold uppercase text-center text-white sm:text-[35px] md:leading-10 leading-9">{{ section.settings.title | escape }}</h2>
     {% endif %}
 
-    {% if section.settings.text != blank %}
-      <div>{{ section.settings.text }}</div>
-    {% endif %}
-    {% if section.settings.button_label != blank and section.settings.button_link != blank %}
-      <a href="{{ section.settings.button_link }}">
-        {{ section.settings.button_label | escape }}
-      </a>
-    {% endif %}
+
+
     
   </div>
       <div class="grid">
@@ -85,14 +79,6 @@
         <h2 class="font-bold uppercase text-white text-center md:text-[35px] text-[26px] md:leading-10 leading-9">{{ section.settings.title | escape }}</h2>
       {% endif %}
 
-      {% if section.settings.text != blank %}
-        <div>{{ section.settings.text }}</div>
-      {% endif %}
-      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
-        <a href="{{ section.settings.button_link }}">
-          {{ section.settings.button_label | escape }}
-        </a>
-      {% endif %}
       <div class="flex flex-col">
       <div class="relative mx-6 flex flex-row justify-center">
           <div class="flex items-end">
@@ -142,44 +128,14 @@
         "id": "image",
         "label": "Image"
       },
-      {
-        "type": "select",
-        "id": "layout",
-        "label": "Image alignment",
-        "default": "left",
-        "options": [
-          {
-            "value": "left",
-            "label": "Left"
-          },
-          {
-            "value": "right",
-            "label": "Right"
-          }
-        ]
-      },
+
       {
         "type": "text",
         "id": "title",
         "label": "Heading",
         "default": "Heading"
       },
-      {
-        "type": "richtext",
-        "id": "text",
-        "label": "Text",
-        "default": "<p>Hero image + text block</p>"
-      },
-      {
-        "type": "text",
-        "id": "button_label",
-        "label": "Button label"
-      },
-      {
-        "type": "url",
-        "id": "button_link",
-        "label": "Button link"
-      }
+
     ],
     "presets": [
       {
