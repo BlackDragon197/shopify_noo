@@ -78,6 +78,8 @@
         "type": "featured-product",
         "settings": {
           "product1": "test-product",
+          "product2": "",
+          "product3": "test-product",
           "show_share_buttons": false
         }
       }
