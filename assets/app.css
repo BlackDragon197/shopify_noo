@@ -572,8 +572,8 @@ video {
 .w-full {
   width: 100%;
 }
-.w-10 {
-  width: 2.5rem;
+.min-w-\[3rem\] {
+  min-width: 3rem;
 }
 .max-w-1410 {
   max-width: 1410px;
