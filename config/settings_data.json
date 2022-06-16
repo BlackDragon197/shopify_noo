@@ -79,8 +79,7 @@
         "settings": {
           "product1": "test-product",
           "product2": "",
-          "product3": "test-product",
-          "show_share_buttons": false
+          "product3": "test-product"
         }
       }
     },
