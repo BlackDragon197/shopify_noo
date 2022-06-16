@@ -551,6 +551,12 @@ video {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
 .block {
   display: block;
 }
@@ -592,6 +598,9 @@ video {
 }
 .flex-col {
   flex-direction: column;
+}
+.items-start {
+  align-items: flex-start;
 }
 .items-end {
   align-items: flex-end;
@@ -635,6 +644,9 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.pt-6 {
+  padding-top: 1.5rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
@@ -709,6 +721,10 @@ video {
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 
   .md\:text-\[35px\] {
