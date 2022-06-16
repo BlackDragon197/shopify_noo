@@ -597,8 +597,8 @@ video {
 .max-w-1410 {
   max-width: 1410px;
 }
-.max-w-\[18rem\] {
-  max-width: 18rem;
+.max-w-\[43rem\] {
+  max-width: 43rem;
 }
 .basis-2 {
   flex-basis: 0.5rem;
@@ -682,11 +682,14 @@ video {
 .pr-10 {
   padding-right: 2.5rem;
 }
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 .pl-2 {
   padding-left: 0.5rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
 }
 .pl-1 {
   padding-left: 0.25rem;
@@ -702,6 +705,9 @@ video {
 }
 .text-\[26px\] {
   font-size: 26px;
+}
+.text-\[22px\] {
+  font-size: 22px;
 }
 .text-xl {
   font-size: 1.25rem;
