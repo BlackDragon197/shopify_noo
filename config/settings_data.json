@@ -67,6 +67,7 @@
         "type": "hero-section",
         "settings": {
           "image": "shopify:\/\/shop_images\/Main_image.png",
+          "image2": "shopify:\/\/shop_images\/Lutemax-01_1.png",
           "layout": "left",
           "title": "SAVE UP TO 55% ON NOOCUB EGG-CELLENT EASTER DEALS OUT NOW",
           "text": "<p>Hero image + text block<\/p>",
