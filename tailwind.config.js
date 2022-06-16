@@ -12,6 +12,9 @@ module.exports = {
     './templates/customers/*.liquid',
   ],
   theme: {
+    fontFamily:{
+      "futura": "Futura PT"
+    },
     maxWidth:{
       '1410': '1410px'
     },
