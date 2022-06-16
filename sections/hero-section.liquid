@@ -40,9 +40,9 @@
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               {% endif %}
           </div>
-          <div class="absolute top-0 right-0">
+          <div class="absolute top-0 right-0 md:hidden">
             {% if section.settings.image2 != blank %}
-            {% include 'responsive-image' with
+            {% include 'responsive-image-mobile' with
                 image: section.settings.image2,
                 image_class: "img",
                 max_width: 200,
@@ -52,6 +52,18 @@
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
             {% endif %}
         </div>
+        <div class="absolute top-0 right-0 hidden md:block">
+          {% if section.settings.image2 != blank %}
+          {% include 'responsive-image' with
+              image: section.settings.image2,
+              image_class: "img",
+              max_width: 200,
+              max_height: 200
+          %}
+          {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+      </div>
       </div>
     </div>
   
