@@ -540,9 +540,6 @@ video {
     max-width: 1440px;
   }
 }
-.visible {
-  visibility: visible;
-}
 .relative {
   position: relative;
 }
@@ -632,6 +629,15 @@ video {
 }
 .pb-12 {
   padding-bottom: 3rem;
+}
+.pl-10 {
+  padding-left: 2.5rem;
+}
+.pr-10 {
+  padding-right: 2.5rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
 }
 .pl-2 {
   padding-left: 0.5rem;
