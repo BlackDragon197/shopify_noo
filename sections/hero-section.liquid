@@ -15,7 +15,7 @@
     {% endif %}
   </div>
       <div class="grid">
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center relative">
             <div class="relative md:hidden">
                 {% if section.settings.image != blank %}
                 {% include 'responsive-image-mobile' with
@@ -45,8 +45,8 @@
             {% include 'responsive-image' with
                 image: section.settings.image2,
                 image_class: "img",
-                max_width: 90,
-                max_height: 90
+                max_width: 200,
+                max_height: 200
             %}
             {% else %}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
