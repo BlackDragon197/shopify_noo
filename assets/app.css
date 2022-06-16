@@ -588,9 +588,6 @@ video {
 .w-\[18rem\] {
   width: 18rem;
 }
-.w-\[100\%\] {
-  width: 100%;
-}
 .min-w-\[3rem\] {
   min-width: 3rem;
 }
@@ -599,6 +596,9 @@ video {
 }
 .max-w-1410 {
   max-width: 1410px;
+}
+.max-w-\[18rem\] {
+  max-width: 18rem;
 }
 .basis-2 {
   flex-basis: 0.5rem;
@@ -657,6 +657,18 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .pt-6 {
   padding-top: 1.5rem;
