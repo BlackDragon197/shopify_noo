@@ -16,12 +16,11 @@
   </div>
       <div class="grid">
         <div class="flex items-center justify-center">
-            <div class="relative">
+            <div class="relative md:hidden">
                 {% if section.settings.image != blank %}
-                {% include 'responsive-image' with
+                {% include 'responsive-image-mobile' with
                     image: section.settings.image,
                     image_class: "img",
-                    
                     max_width: 703,
                     max_height: 713
                 %}
@@ -29,6 +28,18 @@
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {% endif %}
             </div>
+            <div class="relative hidden md:block">
+              {% if section.settings.image != blank %}
+              {% include 'responsive-image' with
+                  image: section.settings.image,
+                  image_class: "img",
+                  max_width: 703,
+                  max_height: 713
+              %}
+              {% else %}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+          </div>
       </div>
     </div>
   
