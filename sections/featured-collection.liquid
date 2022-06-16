@@ -8,10 +8,13 @@
   Theme Store optional settings
   - Heading: title of the featured collection section
 {%- endcomment -%}
-<section class="featured-collection">
-  {% if section.settings.title != blank %}
-    <h2 class="featured-collection__title">{{ section.settings.title | escape }}</h2>
+<div class="flex justify-center">
+{% if section.settings.title != blank %}
+    <h2 class="md:text-4xl text-[22px] featured-collection__title">{{ section.settings.title }}</h2>
   {% endif %}
+</div>
+<section class="featured-collection">
+  
 
   {%- assign collection = collections[section.settings.collection] -%}
 
@@ -68,7 +71,7 @@
         "type": "textarea",
         "id": "title",
         "label": "Heading",
-        "default": "DON'T WAIT FOR THE EASTER BUNNY TO BRING YOURS! ORDER NOOCUBE TODAY!"
+        "default": "DON'T WAIT FOR THE EASTER BUNNY TO BRING YOURS! <br/><span class='md:text-[40px] font-black font-montserrat md:font-futura md:font-bold'>ORDER NOOCUBE TODAY!</span>"
       },
       {
         "id": "collection",

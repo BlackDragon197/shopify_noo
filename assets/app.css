@@ -703,15 +703,21 @@ video {
 .font-futura {
   font-family: Futura PT;
 }
-.text-\[26px\] {
-  font-size: 26px;
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 .text-\[22px\] {
   font-size: 22px;
 }
+.text-\[26px\] {
+  font-size: 26px;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.font-black {
+  font-weight: 900;
 }
 .font-bold {
   font-weight: 700;
@@ -775,8 +781,25 @@ video {
     padding-top: 5rem;
   }
 
+  .md\:font-futura {
+    font-family: Futura PT;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .md\:text-\[35px\] {
     font-size: 35px;
+  }
+
+  .md\:font-bold {
+    font-weight: 700;
   }
 
   .md\:leading-10 {
