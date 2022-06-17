@@ -546,8 +546,8 @@ video {
 .relative {
   position: relative;
 }
-.top-0 {
-  top: 0px;
+.-top-3 {
+  top: -0.75rem;
 }
 .mx-auto {
   margin-left: auto;
