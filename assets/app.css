@@ -540,6 +540,9 @@ video {
     max-width: 1440px;
   }
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
 }
@@ -554,6 +557,9 @@ video {
 .mx-7 {
   margin-left: 1.75rem;
   margin-right: 1.75rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .mb-7 {
   margin-bottom: 1.75rem;
@@ -648,6 +654,10 @@ video {
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -749,6 +759,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 
   .sm\:px-3 {
     padding-left: 0.75rem;
