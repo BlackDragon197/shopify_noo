@@ -47,8 +47,21 @@
           %}
         </div>
       {% endif %}
-      <div>
+      <div class="w-full flex flex-col">
       <p>{{ product.title | escape }}</p>
+      <p>{{ product.description }}</p>
+      <div class="flex flex-row justify-between">
+        <span class="uppercase font-futura text-[9px] font-normal">Regular Price</span>
+        <span class="uppercase font-futura text-[9px] font-normal">Easter Price</span>
+      </div>
+      <div class="flex flex-row justify-between">
+        <div class="flex items-start">
+          {{product.compare_at_price}}
+        </div>
+        <div class="flex items-end">
+          {{product.price}}
+        </div>
+      </div>
       <span>
         {% if product.compare_at_price > product.price %}
           {% if product.price_varies %}

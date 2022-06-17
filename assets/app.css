@@ -639,6 +639,9 @@ video {
 .items-start {
   align-items: flex-start;
 }
+.items-end {
+  align-items: flex-end;
+}
 .items-center {
   align-items: center;
 }
@@ -752,6 +755,9 @@ video {
 .text-\[22px\] {
   font-size: 22px;
 }
+.text-\[9px\] {
+  font-size: 9px;
+}
 .text-\[26px\] {
   font-size: 26px;
 }
@@ -764,6 +770,9 @@ video {
 }
 .font-black {
   font-weight: 900;
+}
+.font-normal {
+  font-weight: 400;
 }
 .font-bold {
   font-weight: 700;
