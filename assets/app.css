@@ -546,6 +546,12 @@ video {
 .relative {
   position: relative;
 }
+.top-0 {
+  top: 0px;
+}
+.left-11 {
+  left: 2.75rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -558,8 +564,8 @@ video {
   margin-left: 1.75rem;
   margin-right: 1.75rem;
 }
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 .mb-7 {
   margin-bottom: 1.75rem;
