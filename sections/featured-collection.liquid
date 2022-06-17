@@ -30,7 +30,7 @@
   {% for product in collection.products limit: 6 %}
   
     <a href="{{ product.url | within: collection }}" class="featured-collection-item">
-      <div class="flex flex-row w-full px-6 min-w-380 py-4 bg-white mb-5 shadow-1 rounded-rounded-3">
+      <div class="flex flex-row w-full px-6 min-w-380 py-4 bg-white mb-5 shadow-product rounded-rounded-3">
       {% if product.featured_image != blank %}
         <div class="hidden md:block featured-collection__image">
           {% include 'responsive-image' with
