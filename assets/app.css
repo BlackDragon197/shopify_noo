@@ -653,8 +653,11 @@ video {
 .rounded-rounded-3 {
   border-radius: 3px;
 }
-.border-b-\[5px\] {
-  border-bottom-width: 5px;
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-red-600 {
   --tw-border-opacity: 1;
