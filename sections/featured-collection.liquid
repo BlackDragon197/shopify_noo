@@ -46,7 +46,7 @@
             max_height: 114
           %}
         </div>
-        <img class="" src="{{ product.images.last | img_url: 'large' }}" alt="{{ product.images.last.alt | escape }}" />
+        <img class="" src="{{ product.images[1] | img_url: 'large' }}" alt="{{ product.images.last.alt | escape }}" />
       {% endif %}
       <div class="w-full flex flex-col">
       <p>{{ product.title | escape }}</p>
