@@ -21,6 +21,10 @@ module.exports = {
       '380': '380px',
       '740': '740px'
     },
+    minWidth:{
+      '380': '380px',
+      '740': '740px'
+    },
     borderRadius:{
       'rounded-3': '3px',
     },
