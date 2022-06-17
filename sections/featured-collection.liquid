@@ -56,10 +56,10 @@
       </div>
       <div class="flex flex-row justify-between">
         <div class="flex items-start">
-          {{product.compare_at_price | money}}
+          {{product.compare_at_price | money }}
         </div>
         <div class="flex items-end">
-          {{product.price | money}}
+          {{product.price | money }}
         </div>
       </div>
       <span>
@@ -70,6 +70,7 @@
           {% else %}
             {{ 'products.product.on_sale' | t }}
             {{ product.price | money }}
+            {{product.price | money }}
           {% endif %}
         {% else %}
           {% if product.price_varies %}
