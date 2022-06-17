@@ -31,14 +31,8 @@
   
     <a href="{{ product.url | within: collection }}" class="featured-collection-item">
       <div class="flex flex-row w-full px-6 min-w-380 py-4 bg-white mb-5 shadow-product rounded-rounded-3">
-      {% if product.featured_image != blank %}
-        <div class="hidden md:block featured-collection__image">
-          {% include 'responsive-image' with
-            image: product.featured_image,
-            max_width: 480,
-            max_height: 480
-          %}
-        </div>
+      {% if product.featured_image != blank || if !product.images[1]%}
+        
         <div class="md:hidden featured-collection__image">
           {% include 'responsive-image' with
             image: product.featured_image,
@@ -47,7 +41,9 @@
           %}
         </div>
         {% if product.images[1]%}
+        <div class="hidden md:block">
         <img class="" src="{{ product.images[1] | img_url: 'large' }}" alt="{{ product.images.last.alt | escape }}" />
+        </div>
         {% endif %}
       {% endif %}
       <div class="w-full flex flex-col">
