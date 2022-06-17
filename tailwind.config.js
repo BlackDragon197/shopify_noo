@@ -29,6 +29,9 @@ module.exports = {
       'rounded-3': '3px',
     },
     extend: {
+      boxShadow:{
+        'product': 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
+      }
     },
     screens: {
       'sm': '768px',
