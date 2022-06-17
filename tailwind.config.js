@@ -18,7 +18,8 @@ module.exports = {
     },
     maxWidth:{
       '1410': '1410px',
-      '380': '380px'
+      '380': '380px',
+      '580': '580px'
     },
     borderRadius:{
       'rounded-3': '3px',
