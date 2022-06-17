@@ -19,7 +19,7 @@ module.exports = {
     maxWidth:{
       '1410': '1410px',
       '380': '380px',
-      '610': '610px'
+      '740': '740px'
     },
     borderRadius:{
       'rounded-3': '3px',
