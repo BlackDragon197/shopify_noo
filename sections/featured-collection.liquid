@@ -29,7 +29,7 @@
 
   {% for product in collection.products limit: 6 %}
   
-    <a href="{{ product.url | within: collection }}" class="featured-collection-item">
+    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-4">
       <div class="max-w-[290px] xs:max-w-380 md:max-w-740 flex flex-row items-center w-full px-2 xs:px-5 min-w-[250px] sm:min-w-740 xs:min-w-380 py-4 bg-white mb-5 shadow-product rounded-rounded-3">
       {% if product.featured_image != blank %}
         {% if product.images[1]%}
