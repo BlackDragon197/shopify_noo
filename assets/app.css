@@ -636,6 +636,9 @@ video {
 .max-w-740 {
   max-width: 740px;
 }
+.max-w-380 {
+  max-width: 380px;
+}
 .max-w-1410 {
   max-width: 1410px;
 }
@@ -853,6 +856,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:max-w-740 {
+    max-width: 740px;
   }
 
   .md\:grid-cols-2 {
