@@ -516,10 +516,10 @@ video {
 .container {
   width: 100%;
 }
-@media (min-width: 400px) {
+@media (min-width: 375px) {
 
   .container {
-    max-width: 400px;
+    max-width: 375px;
   }
 }
 @media (min-width: 768px) {
@@ -626,6 +626,9 @@ video {
 }
 .w-\[227px\] {
   width: 227px;
+}
+.w-\[262px\] {
+  width: 262px;
 }
 .w-\[18rem\] {
   width: 18rem;
@@ -838,14 +841,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-@media (min-width: 400px) {
+@media (min-width: 375px) {
 
-  .xs\:block {
-    display: block;
-  }
-
-  .xs\:hidden {
-    display: none;
+  .xs\:w-\[324px\] {
+    width: 324px;
   }
 
   .xs\:min-w-380 {
