@@ -642,6 +642,11 @@ video {
 .max-w-380 {
   max-width: 380px;
 }
+.max-w-fit {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
 .max-w-1410 {
   max-width: 1410px;
 }

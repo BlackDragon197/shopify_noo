@@ -19,7 +19,8 @@ module.exports = {
     maxWidth:{
       '1410': '1410px',
       '380': '380px',
-      '740': '740px'
+      '740': '740px',
+      'fit': 'fit-content'
     },
     minWidth:{
       '380': '380px',
