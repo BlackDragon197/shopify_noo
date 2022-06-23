@@ -651,6 +651,9 @@ video {
 .max-w-380 {
   max-width: 380px;
 }
+.max-w-\[290px\] {
+  max-width: 290px;
+}
 .max-w-fit {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -852,6 +855,10 @@ video {
 
   .xs\:min-w-380 {
     min-width: 380px;
+  }
+
+  .xs\:max-w-380 {
+    max-width: 380px;
   }
 
   .xs\:px-5 {
