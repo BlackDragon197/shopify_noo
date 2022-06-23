@@ -516,6 +516,12 @@ video {
 .container {
   width: 100%;
 }
+@media (min-width: 400px) {
+
+  .container {
+    max-width: 400px;
+  }
+}
 @media (min-width: 768px) {
 
   .container {
@@ -623,9 +629,6 @@ video {
 }
 .w-\[18rem\] {
   width: 18rem;
-}
-.min-w-380 {
-  min-width: 380px;
 }
 .min-w-\[45\%\] {
   min-width: 45%;
@@ -834,6 +837,12 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+@media (min-width: 400px) {
+
+  .xs\:min-w-380 {
+    min-width: 380px;
+  }
 }
 @media (min-width: 768px) {
 
