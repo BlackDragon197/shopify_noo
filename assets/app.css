@@ -585,6 +585,9 @@ video {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -677,6 +680,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 .truncate {
   overflow: hidden;
