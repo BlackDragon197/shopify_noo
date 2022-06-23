@@ -709,10 +709,6 @@ video {
   padding-left: 2.75rem;
   padding-right: 2.75rem;
 }
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -869,6 +865,11 @@ video {
 
   .md\:justify-around {
     justify-content: space-around;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:py-2 {
