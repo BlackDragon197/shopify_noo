@@ -1,0 +1,6 @@
+development:
+password: shptka_9084489fcbf6a58aa12d7fe3702807b4
+theme_ide: 133368447199
+store: crazybulk-demo-2.myshopify.com
+ignore_files: 
+-config/settings_data.json
