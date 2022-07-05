@@ -1,1 +1,139 @@
-{"current":{"header_background_color":"#000000","header_height":66,"color_main_bg":"#161d25","color_accent":"#5e8db6","header_bacgkround_color":"#894545","sections":{"collection-list":{"type":"collection-list","blocks":{"collection-list-1":{"type":"collection","settings":{"collection":""}},"collection-list-2":{"type":"collection","settings":{"collection":""}}},"block_order":["collection-list-1","collection-list-2"],"settings":{"title":"Collection list"}},"featured-collection":{"type":"featured-collection","settings":{"title":"Featured collection","collection":"frontpage"}},"featured-product":{"type":"featured-product","settings":{"product":"test-product","show_share_buttons":false}},"header":{"type":"header","settings":{"announcement_bar_enabled":false,"announcement_bar_home_page_only":true,"announcement_bar_text":"test link","announcement_bar_link":"","logo":"shopify:\/\/shop_images\/Vector.png","logo_max_width":450,"menu":""}},"footer":{"type":"footer","settings":{"footer_linklist":"","show_payment_icons":false}},"165531059468e5c8e7":{"type":"hero-section","settings":{"image":"shopify:\/\/shop_images\/Group_305.png","layout":"left","title":"SAVE UP TO 55% ON NOOCUB<br> EGG-CELLENT EASTER DEALS OUT NOW","text":"<p>Hero image + text block<\/p>","button_label":"","button_link":""}},"1655418599ba041d04":{"type":"featured-collection","settings":{"title":"DON'T WAIT FOR THE EASTER BUNNY TO BRING YOURS! <br><span class=\"md:text-[40px] font-black font-montserrat md:font-futura md:font-bold\">ORDER NOOCUBE TODAY!<\/span>","collection":"main"}}},"content_for_index":["165531059468e5c8e7","1655418599ba041d04"]},"presets":{"Default":{"sections":{"collection-list":{"type":"collection-list","blocks":{"collection-list-0":{"type":"collection","settings":{}},"collection-list-1":{"type":"collection","settings":{}},"collection-list-2":{"type":"collection","settings":{}}},"block_order":["collection-list-0","collection-list-1","collection-list-2"],"settings":{}},"featured-collection":{"type":"featured-collection","settings":{"collection":"frontpage"}},"featured-product":{"type":"featured-product","settings":{}}},"content_for_index":["collection-list","featured-collection","featured-product"]}}}
+{
+  "current": {
+    "header_background_color": "#e59494",
+    "header_height": 66,
+    "color_main_bg": "#161d25",
+    "color_accent": "#5e8db6",
+    "header_bacgkround_color": "#894545",
+    "sections": {
+      "collection-list": {
+        "type": "collection-list",
+        "blocks": {
+          "collection-list-1": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "collection-list-2": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "collection-list-1",
+          "collection-list-2"
+        ],
+        "settings": {
+          "title": "Collection list"
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "frontpage"
+        }
+      },
+      "featured-product": {
+        "type": "featured-product",
+        "settings": {
+          "product": "test-product",
+          "show_share_buttons": false
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "announcement_bar_enabled": false,
+          "announcement_bar_home_page_only": true,
+          "announcement_bar_text": "test link",
+          "announcement_bar_link": "",
+          "logo": "shopify:\/\/shop_images\/Vector.png",
+          "logo_max_width": 450,
+          "menu": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_linklist": "",
+          "show_payment_icons": false
+        }
+      },
+      "165531059468e5c8e7": {
+        "type": "hero-section",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Group_305.png",
+          "layout": "left",
+          "title": "SAVE UP TO 55% ON NOOCUB<br> EGG-CELLENT EASTER DEALS OUT NOW",
+          "text": "<p>Hero image + text block<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1655418599ba041d04": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "DON'T WAIT FOR THE EASTER BUNNY TO BRING YOURS! <br><span class=\"md:text-[40px] font-black font-montserrat md:font-futura md:font-bold\">ORDER NOOCUBE TODAY!<\/span>",
+          "collection": "main"
+        }
+      }
+    },
+    "content_for_index": [
+      "165531059468e5c8e7",
+      "1655418599ba041d04"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-list-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "collection-list-1": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "collection-list-2": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "collection-list-0",
+            "collection-list-1",
+            "collection-list-2"
+          ],
+          "settings": {
+          }
+        },
+        "featured-collection": {
+          "type": "featured-collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "collection-list",
+        "featured-collection",
+        "featured-product"
+      ]
+    }
+  }
+}
