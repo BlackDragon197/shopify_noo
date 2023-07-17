@@ -36,3 +36,5 @@ function init() {
     $(selectors.body).off('click.siteNav');
     $(window).off('keyup.siteNav');
   }
+
+  init()

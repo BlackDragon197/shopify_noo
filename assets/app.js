@@ -49,6 +49,8 @@ function hideDropdown($el) {
   $(window).off('keyup.siteNav');
 }
 
+init();
+
 /***/ }),
 
 /***/ "./src/scss/app.scss":
