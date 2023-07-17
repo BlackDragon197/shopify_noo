@@ -610,6 +610,9 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
+.mt-20 {
+  margin-top: 5rem;
+}
 .block {
   display: block;
 }
@@ -842,6 +845,9 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 .italic {
   font-style: italic;
