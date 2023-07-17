@@ -112,7 +112,7 @@ Theme Store optional settings
     </div>
     <div>
       <ul class="menu">
-        {% for link in section.settings.menu.links %}
+        {% for link in section.settings.main-menu.links %}
           <li class="menu-link">
             <a href="{{ link.url }}">{{ link.title }}</a>
 
@@ -203,8 +203,8 @@ Theme Store optional settings
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "{{ shop.name }}",
+        "@type": "Organization",
+        "name": "{{ shop.name }}",
   {% if section.settings.logo %}
     {% assign image_size = section.settings.logo.width | append: 'x' %}
     "logo": "https:{{ section.settings.logo | img_url: image_size }}",
@@ -219,7 +219,7 @@ Theme Store optional settings
   "{{ settings.social_youtube_link }}",
   "{{ settings.social_vimeo_link }}"
   ],
-      "url": "{{ shop.url }}{{ page.url }}"
+        "url": "{{ shop.url }}{{ page.url }}"
   }
 </script>
 
@@ -227,14 +227,14 @@ Theme Store optional settings
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-              "@type": "WebSite",
-              "name": "{{ shop.name }}",
+                  "@type": "WebSite",
+                  "name": "{{ shop.name }}",
     "potentialAction": {
-                "@type": "SearchAction",
-                "target": "{{ shop.url }}/search?q={search_term_string}",
+                    "@type": "SearchAction",
+                    "target": "{{ shop.url }}/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
-              },
-              "url": "{{ shop.url }}{{ page.url }}"
+                  },
+                  "url": "{{ shop.url }}{{ page.url }}"
     }
   </script>
 {% endif %}
