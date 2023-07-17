@@ -1,6 +1,8 @@
 development:
-password: shptka_9084489fcbf6a58aa12d7fe3702807b4
-theme_ide: 133368447199
-store: crazybulk-demo-2.myshopify.com
-ignore_files: 
--config/settings_data.json
+  password: shptka_df2d49618f33228ef02a14876ce078be
+  theme_id: "133368447199"
+  store: crazybulk-demo-2.myshopify.com
+  ignore_files:
+  - '*.gif'
+  - '*.jpg'
+  - config/settings_data.json
