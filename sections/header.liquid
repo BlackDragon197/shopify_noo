@@ -110,6 +110,35 @@ Theme Store optional settings
         Shop Nows
       </a>
     </div>
+    <div>
+      <ul class="menu">
+        {% for link in section.settings.menu.links %}
+          <li class="menu-link">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+
+            {% if link.links.size > 0 %}
+              <ul class="menu dropdown-child">
+                {% for child_link in link.links %}
+                  <li class="menu-link">
+                    <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+
+                    {% if child_link.links.size > 0 %}
+                      <ul class="menu dropdown-grandchild">
+                        {% for grandchild_link in child_link.links %}
+                          <li class="menu-link">
+                            <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -174,8 +203,8 @@ Theme Store optional settings
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "{{ shop.name }}",
+      "@type": "Organization",
+      "name": "{{ shop.name }}",
   {% if section.settings.logo %}
     {% assign image_size = section.settings.logo.width | append: 'x' %}
     "logo": "https:{{ section.settings.logo | img_url: image_size }}",
@@ -190,7 +219,7 @@ Theme Store optional settings
   "{{ settings.social_youtube_link }}",
   "{{ settings.social_vimeo_link }}"
   ],
-    "url": "{{ shop.url }}{{ page.url }}"
+      "url": "{{ shop.url }}{{ page.url }}"
   }
 </script>
 
@@ -198,14 +227,14 @@ Theme Store optional settings
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-          "@type": "WebSite",
-          "name": "{{ shop.name }}",
+              "@type": "WebSite",
+              "name": "{{ shop.name }}",
     "potentialAction": {
-            "@type": "SearchAction",
-            "target": "{{ shop.url }}/search?q={search_term_string}",
+                "@type": "SearchAction",
+                "target": "{{ shop.url }}/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
-          },
-          "url": "{{ shop.url }}{{ page.url }}"
+              },
+              "url": "{{ shop.url }}{{ page.url }}"
     }
   </script>
 {% endif %}
