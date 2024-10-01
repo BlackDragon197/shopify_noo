@@ -49,8 +49,8 @@ module.exports = {
           '50%': { transform: 'translateY(-25px)' }, // For desktop
         },
       },
-      colors: {
-        'span-linear': 'linear-gradient(to bottom, #341087 52%, #A669EF 100%)',
+      backgroundImage: {
+        'span-linear': 'linear-gradient(to bottom, #A669EF 52%, #341087 100%)',
       },
     },
     screens: {

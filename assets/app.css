@@ -851,16 +851,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(216 180 254 / var(--tw-bg-opacity));
 }
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-.from-indigo-600 {
-  --tw-gradient-from: #4f46e5;
-  --tw-gradient-to: rgb(79 70 229 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.to-purple-400 {
-  --tw-gradient-to: #c084fc;
+.bg-span-linear {
+  background-image: linear-gradient(to bottom, #A669EF 52%, #341087 100%);
 }
 .bg-clip-text {
   -webkit-background-clip: text;
