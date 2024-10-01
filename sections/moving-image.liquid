@@ -1,7 +1,23 @@
 <div class="">
   <section class="flex flex-col pt-7 pl-9 pr-8">
     <div class="flex flex-col content-start items-start gap-7 relative">
-      <div class="w-[52%]">
+      <div x-data="{
+        activeBlock: 1,
+        images: [
+            'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.50PM.png?v=1726878666',
+            'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.37PM.png?v=1726878666'
+        ],
+        getActiveImage() {
+            return this.activeBlock === 1 ? this.images[0] : this.images[1];
+        },
+        selectBlock(blockNumber) {
+            this.activeBlock = blockNumber;
+        }
+    }" class="w-[52%]">
+        <!-- Image Display -->
+        <div class="w-full h-full">
+          <img :src="getActiveImage()" alt="Selected Image" class="w-full h-full object-cover">
+        </div>
         <img src="https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.50PM.png?v=1726878666" alt="" class="rounded-8">
       </div>
       <div class="flex flex-col max-w-[25.5%] w-full mb-20 h-[25.5vw]">
@@ -29,10 +45,10 @@
           Color: Fennel-seed
         </div>
         <div class="flex gap-2 mb-4">
-          <div class="w-5 h-5 p-[2.5px] rounded-12 border-selected border-black">
+          <div @click="selectBlock(1)" :class="activeBlock === 1 ? 'border-selected border-black' : 'border-default border-slate-300'" class="w-5 h-5 p-[2.5px] rounded-12">
             <div class="rounded-12 bg-yellow-800 h-full"></div>
           </div>
-          <div class="w-5 h-5 p-[2.5px] rounded-12 border-default border-slate-300">
+          <div @click="selectBlock(2)" :class="activeBlock === 2 ? 'border-selected border-black' : 'border-default border-slate-300'" class="w-5 h-5 p-[2.5px] rounded-12">
             <div class="rounded-12 bg-lime-400 h-full"></div>
           </div>
         </div>

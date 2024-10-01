@@ -655,6 +655,9 @@ video {
 .h-16 {
   height: 4rem;
 }
+.h-full {
+  height: 100%;
+}
 .h-\[25\.5vw\] {
   height: 25.5vw;
 }
@@ -669,9 +672,6 @@ video {
 }
 .h-5 {
   height: 1.25rem;
-}
-.h-full {
-  height: 100%;
 }
 .min-h-\[16px\] {
   min-height: 16px;
@@ -937,6 +937,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-4 {
   padding: 1rem;
