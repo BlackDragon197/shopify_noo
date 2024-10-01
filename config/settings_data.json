@@ -75,6 +75,7 @@
       "moving_image_FThnPY": {
         "type": "moving-image",
         "settings": {
+          "image": "shopify://shop_images/Desktop.png",
           "layout": "left",
           "title": "Heading",
           "text": "<p>Hero image + text block</p>",
