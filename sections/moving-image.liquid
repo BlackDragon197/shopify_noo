@@ -25,7 +25,7 @@
         this.mouseY = (window.innerHeight / 2 - event.clientY) / 30;
     }
 }" @mousemove="handleMouseMove">
-  <section class="flex flex-col m-7 ml-9 mr-8 font-sf font-normal sm:m-15 sm:mr-sm-sec sm:ml-sm-sec lg:mt-0 lg:pt-15 lg:flex-row-reverse lg:items-center">
+  <section class="flex flex-col m-7 ml-9 mr-8 font-sf font-normal sm:m-15 sm:mr-sm-sec sm:ml-sm-sec lg:mt-0 lg:mb-0 lg:p-15 lg:flex-row-reverse lg:items-center">
     <div class="flex flex-col content-start items-start gap-7 relative lg:w-1/2" >
       <div class="w-[52%]">
         <!-- Image Display -->
@@ -102,8 +102,8 @@
     </div>
     
   </section>
-      <img src="{{ 'bg-mob.png' | asset_img_url: '750x' }}" alt="" class="mem  right-0 absolute w-full -z-10 -top-9 h-[-webkit-fill-available] lg:hidden">
-      <img src="{{ 'bg-pc.png' | asset_img_url: '1440x' }}" alt="" class="mem  right-0 absolute w-full -z-10 -top-9 h-[-webkit-fill-available] lg:block">
+      <img src="{{ 'bg-mob.png' | asset_img_url: '750x' }}" alt="" class="right-0 absolute w-full -z-10 -top-9 h-[-webkit-fill-available] lg:hidden">
+      <img src="{{ 'bg-pc.png' | asset_img_url }}" alt="" class="right-0 absolute w-full -z-10 -top-9 h-[-webkit-fill-available] lg:block">
     </div>
 
   <style>

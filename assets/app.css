@@ -1413,6 +1413,10 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -1453,8 +1457,8 @@ video {
     align-items: center;
   }
 
-  .lg\:pt-15 {
-    padding-top: 60px;
+  .lg\:p-15 {
+    padding: 60px;
   }
 
   .lg\:text-\[1\.4rem\] {
