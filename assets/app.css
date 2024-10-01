@@ -1398,6 +1398,10 @@ video {
 }
 @media (min-width: 1280px) {
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:min-w-330 {
     min-width: 330px;
   }
