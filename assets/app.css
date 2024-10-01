@@ -661,6 +661,9 @@ video {
 .w-\[18rem\] {
   width: 18rem;
 }
+.w-\[52\%\] {
+  width: 52%;
+}
 .w-3 {
   width: 0.75rem;
 }
@@ -864,6 +867,15 @@ video {
 }
 .pl-1 {
   padding-left: 0.25rem;
+}
+.pt-7 {
+  padding-top: 1.75rem;
+}
+.pl-9 {
+  padding-left: 2.25rem;
+}
+.pr-8 {
+  padding-right: 2rem;
 }
 .text-left {
   text-align: left;
