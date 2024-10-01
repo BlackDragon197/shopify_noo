@@ -1453,3 +1453,6 @@ video {
     font-weight: 800;
   }
 }
+.text-wrap{
+  text-wrap: nowrap
+}
