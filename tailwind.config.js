@@ -13,7 +13,7 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      "futura": "Futura PT",
+      "sf": "SF Pro Display",
       "montserrat": "'Montserrat', sans-serif",
     },
     borderWidth:{
