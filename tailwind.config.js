@@ -50,7 +50,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'span-linear': 'linear-gradient(to bottom, #341087 52%, #A669EF 100%)',
+        'span-linear': 'linear-gradient(to top, #341087 52%, #A669EF 100%)',
       },
     },
     screens: {
