@@ -73,14 +73,21 @@
         <div>but2</div>
       </div>
     </div>
-    <div class="overflow-hidden absolute w-full h-full filter-invis-mob -z-10">
+    
+  </section>
+  <div class="overflow-hidden absolute w-full h-full filter-invis-mob -z-10"></div>
       <img src="{{ 'bg-mob.png' | asset_img_url: '800x' }}" alt="" class="right-8 absolute w-[802px] h-[758px] -z-10 min-w-[802px]">
     </div>
-  </section>
   {% comment %} {% render 'site-nav' %} {% endcomment %}
   <style>
     .filter-invis-mob::before{
-
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left: 0;
+      content: '';
+      background: #FCF9FF 60%
     }
     #shopify-section-header, #shopify-section-footer{
       display: none;
