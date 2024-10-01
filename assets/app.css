@@ -697,6 +697,9 @@ video {
 .w-4 {
   width: 1rem;
 }
+.w-\[65\.5\%\] {
+  width: 65.5%;
+}
 .min-w-\[240px\] {
   min-width: 240px;
 }
