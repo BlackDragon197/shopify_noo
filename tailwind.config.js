@@ -33,7 +33,20 @@ module.exports = {
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
     },
     extend: {
-
+      animation: {
+        'move-vertical': 'moveVertical 5s ease-in-out infinite',
+        'move-vertical-pc': 'moveVerticalPC 5s ease-in-out infinite',
+      },
+      keyframes: {
+        moveVertical: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-15px)' }, // For mobile/tablet
+        },
+        moveVerticalPC: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-25px)' }, // For desktop
+        },
+      },
     },
     screens: {
       'xs': '375px',
