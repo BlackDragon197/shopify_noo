@@ -37,7 +37,9 @@ module.exports = {
     extend: {
       animation: {
         'move-vertical': 'moveVertical 5s ease-in-out infinite',
-        'move-vertical-2': 'moveVerticalPC 5s ease-in-out infinite',
+        'move-vertical-pc': 'moveVerticalPC 5s ease-in-out infinite',
+        'move-vertical2': 'moveVertical2 5s ease-in-out infinite',
+        'move-vertical-pc2': 'moveVerticalPC2 5s ease-in-out infinite',
       },
       keyframes: {
         moveVertical: {
@@ -47,6 +49,14 @@ module.exports = {
         moveVerticalPC: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-25px)' }, // For desktop
+        },
+        moveVertical2: {
+          '50%': { transform: 'translateY(-15px)' }, // For mobile/tablet
+          '0%, 100%': { transform: 'translateY(0)' },
+        },
+        moveVerticalPC2: {
+          '50%': { transform: 'translateY(-25px)' }, // For desktop
+          '0%, 100%': { transform: 'translateY(0)' },
         },
       },
       backgroundImage: {
