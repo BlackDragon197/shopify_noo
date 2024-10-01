@@ -26,14 +26,6 @@ module.exports = {
       '740': '740px',
       'fit': 'fit-content'
     },
-    width:{
-      '11': '45px',
-      '75': '75px',
-    },
-    height:{
-      '11': '45px',
-      '75': '75px',
-    },
     minWidth:{
       '380': '380px',
       '740': '740px'
