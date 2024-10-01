@@ -852,7 +852,7 @@ video {
   background-color: rgb(216 180 254 / var(--tw-bg-opacity));
 }
 .bg-span-linear {
-  background-image: linear-gradient(to bottom, #A669EF 52%, #341087 100%);
+  background-image: linear-gradient(to bottom, #341087 52%, #A669EF 100%);
 }
 .bg-clip-text {
   -webkit-background-clip: text;
