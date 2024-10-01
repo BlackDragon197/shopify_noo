@@ -670,6 +670,9 @@ video {
 .w-\[75px\] {
   width: 75px;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .w-11 {
   width: 2.75rem;
 }
@@ -779,6 +782,9 @@ video {
 }
 .content-start {
   align-content: flex-start;
+}
+.content-between {
+  align-content: space-between;
 }
 .items-start {
   align-items: flex-start;
