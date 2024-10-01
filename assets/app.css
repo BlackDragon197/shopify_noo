@@ -858,6 +858,9 @@ video {
 .gap-\[7px\] {
   gap: 7px;
 }
+.gap-5 {
+  gap: 1.25rem;
+}
 .gap-1 {
   gap: 0.25rem;
 }
