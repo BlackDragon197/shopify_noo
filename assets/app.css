@@ -1417,6 +1417,10 @@ video {
     margin-top: 2.5rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -1460,7 +1464,4 @@ video {
   .lg\:font-extrabold {
     font-weight: 800;
   }
-}
-.text-wrap{
-  text-wrap: nowrap
 }
