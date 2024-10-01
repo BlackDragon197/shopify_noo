@@ -1402,6 +1402,10 @@ video {
     flex-direction: row-reverse;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:text-\[1\.4rem\] {
     font-size: 1.4rem;
   }
