@@ -1,19 +1,19 @@
 <div class="">
   <section class="flex flex-col pt-7 pl-9 pr-8">
-    <div class="flex flex-col content-start items-start gap-7 relative">
-      <div x-data="{
-        activeBlock: 1,
-        images: [
-            'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.50PM.png?v=1726878666',
-            'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.37PM.png?v=1726878666'
-        ],
-        getActiveImage() {
-            return this.activeBlock === 1 ? this.images[0] : this.images[1];
-        },
-        selectBlock(blockNumber) {
-            this.activeBlock = blockNumber;
-        }
-    }" class="w-[52%]">
+    <div class="flex flex-col content-start items-start gap-7 relative" x-data="{
+      activeBlock: 1,
+      images: [
+          'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.50PM.png?v=1726878666',
+          'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.37PM.png?v=1726878666'
+      ],
+      getActiveImage() {
+          return this.activeBlock === 1 ? this.images[0] : this.images[1];
+      },
+      selectBlock(blockNumber) {
+          this.activeBlock = blockNumber;
+      }
+  }">
+      <div class="w-[52%]">
         <!-- Image Display -->
         <div class="w-full h-full">
           <img :src="getActiveImage()" alt="Selected Image" class="w-full h-full object-cover">
