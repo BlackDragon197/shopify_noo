@@ -18,12 +18,13 @@
         },
       selectBlock(blockNumber) {
           this.activeBlock = blockNumber;
-      }
+      },
+      imageMovement()
   }">
       <div class="w-[52%]">
         <!-- Image Display -->
         <div class="w-full h-full">
-          <img :src="getActiveImage()" alt="Selected Image" class="w-full h-full lg:min-w-330 lg:max-w-[330px]">
+          <img :src="getActiveImage()" :style="`transform: translate(${translateX}px, ${translateY}px)`" alt="Selected Image" class="w-full h-full lg:min-w-330 lg:max-w-[330px]">
         </div>
       </div>
       <div class="flex flex-col max-w-[25.5%] w-full mb-20 h-[25.5vw] lg:h-[196px] lg:mt-10">
@@ -109,7 +110,41 @@
     #shopify-section-header, #shopify-section-footer{
       display: none;
     }
+    img{
+      transition: transform 0.05s ease-out;
+    }
   </style>
+  <script>
+    function imageMovement() {
+        return {
+            translateX: 0,
+            translateY: 0,
+            windowWidth: window.innerWidth,
+
+            // Function to move the image based on mouse movement
+            moveImage(event) {
+                // Disable movement on screens smaller than 768px (tablet/mobile)
+                if (window.innerWidth < 768) {
+                    this.translateX = 0;
+                    this.translateY = 0;
+                    return;
+                }
+
+                // Get window width and height
+                const windowWidth = window.innerWidth;
+                const windowHeight = window.innerHeight;
+
+                // Calculate mouse position relative to the center of the screen
+                const mouseX = (event.clientX - windowWidth / 2);
+                const mouseY = (event.clientY - windowHeight / 2);
+
+                // Invert the movement and make it more subtle by dividing by a factor (e.g., 50)
+                this.translateX = -(mouseX / 50);
+                this.translateY = -(mouseY / 50);
+            }
+        };
+    }
+</script>
 </div>
 
 {% schema %}
