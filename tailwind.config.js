@@ -51,11 +51,11 @@ module.exports = {
           '50%': { transform: 'translateY(-25px)' }, // For desktop
         },
         moveVertical2: {
-          '50%': { transform: 'translateY(-15px)' }, // For mobile/tablet
+          '50%': { transform: 'translateY(15px)' }, // For mobile/tablet
           '0%, 100%': { transform: 'translateY(0)' },
         },
         moveVerticalPC2: {
-          '50%': { transform: 'translateY(-25px)' }, // For desktop
+          '50%': { transform: 'translateY(25px)' }, // For desktop
           '0%, 100%': { transform: 'translateY(0)' },
         },
       },

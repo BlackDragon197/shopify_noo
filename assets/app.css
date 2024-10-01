@@ -750,7 +750,7 @@ video {
 @-webkit-keyframes moveVertical2 {
 
   50% {
-    transform: translateY(-15px);
+    transform: translateY(15px);
   }
 
   0%, 100% {
@@ -760,7 +760,7 @@ video {
 @keyframes moveVertical2 {
 
   50% {
-    transform: translateY(-15px);
+    transform: translateY(15px);
   }
 
   0%, 100% {
