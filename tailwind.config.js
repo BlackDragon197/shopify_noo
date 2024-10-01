@@ -61,6 +61,9 @@ module.exports = {
         '15': '60px',
         'sm-sec': '85px'
       },
+      padding:{
+        '15': '60px',
+      },
       keyframes: {
         moveVertical: {
           '0%, 100%': { transform: 'translateY(0)' },
