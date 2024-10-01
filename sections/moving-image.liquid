@@ -1,5 +1,5 @@
 <div class="">
-  <section class="flex flex-col m-7 ml-9 mr-8 font-sf font-normal sm:m-15 sm:mr-sm-sec sm:ml-sm-sec lg:flex-row-reverse lg:justify-center">
+  <section class="flex flex-col m-7 ml-9 mr-8 font-sf font-normal sm:m-15 sm:mr-sm-sec sm:ml-sm-sec lg:flex-row-reverse lg:items-center">
     <div class="flex flex-col content-start items-start gap-7 relative" x-data="{
       activeBlock: 1,
       images: [
@@ -23,7 +23,7 @@
       <div class="w-[52%]">
         <!-- Image Display -->
         <div class="w-full h-full">
-          <img :src="getActiveImage()" alt="Selected Image" class="w-full h-full">
+          <img :src="getActiveImage()" alt="Selected Image" class="w-full h-full lg:min-w-330 lg:max-w-[330px]">
         </div>
       </div>
       <div class="flex flex-col max-w-[25.5%] w-full mb-20 h-[25.5vw]">
@@ -65,8 +65,8 @@
         </div>
       </div>
     </div>
-    <div class="flex-col">
-      <div class="text-4xl text-transparent bg-span-linear bg-clip-text mb-5 font-bold sm:text-5xl sm:mb-8">Start making money from all your returns</div>
+    <div class="flex-col lg:max-w-1/2">
+      <div class="text-4xl text-transparent bg-span-linear bg-clip-text mb-5 font-bold sm:text-5xl sm:mb-8">Start making money from your returns</div>
       <div class="mb-7 text-blue text-[16px] sm:text-xl sm:mb-10" >Built for shopify merchants of all sizes.</div>
       <div class="flex gap-5">
         <div class="pt-2 pb-2 flex justify-center items-center gap-1 bg-[#4700ED] rounded-80 w-full ms:m-[10px] sm:mr-5 sm:ml-5 sm:w-auto sm:pl-7 sm:pr-7">

@@ -1398,12 +1398,24 @@ video {
 }
 @media (min-width: 1280px) {
 
+  .lg\:min-w-330 {
+    min-width: 330px;
+  }
+
+  .lg\:max-w-\[330px\] {
+    max-width: 330px;
+  }
+
+  .lg\:max-w-1\/2 {
+    max-width: 50%;
+  }
+
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
   }
 
-  .lg\:justify-center {
-    justify-content: center;
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:text-\[1\.4rem\] {

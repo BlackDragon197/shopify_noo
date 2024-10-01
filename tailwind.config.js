@@ -24,11 +24,13 @@ module.exports = {
       '1410': '1410px',
       '380': '380px',
       '740': '740px',
-      'fit': 'fit-content'
+      'fit': 'fit-content',
+      '1/2': '50%',
     },
     minWidth:{
       '380': '380px',
-      '740': '740px'
+      '740': '740px',
+      '330': '330px',
     },
     borderRadius:{
       'rounded-3': '3px',
