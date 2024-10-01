@@ -708,6 +708,9 @@ video {
 .max-w-\[43rem\] {
   max-width: 43rem;
 }
+.max-w-\[75px\] {
+  max-width: 75px;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -941,6 +944,10 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .font-normal {
   font-weight: 400;
 }
@@ -972,6 +979,9 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-span-linear {
+  color: linear-gradient(to bottom, #341087 52%, #A669EF 100%);
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
