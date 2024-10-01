@@ -32,7 +32,8 @@ module.exports = {
       '8': '8px',
     },
     boxShadow:{
-      "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
+      "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);',
+      'squares': '0px 15.34px 15.34px -6.14px rgba(50, 8, 106, 0.28)',
     },
     extend: {
       animation: {
