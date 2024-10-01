@@ -780,6 +780,9 @@ video {
 .flex-col {
   flex-direction: column;
 }
+.content-center {
+  align-content: center;
+}
 .content-start {
   align-content: flex-start;
 }
