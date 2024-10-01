@@ -19,11 +19,12 @@
       selectBlock(blockNumber) {
           this.activeBlock = blockNumber;
       },
-      imageMovement(),
   }">
       <div class="w-[52%]">
         <!-- Image Display -->
-        <div class="w-full h-full">
+        <div class="w-full h-full" x-data="{
+              imageMovement()
+              }">
           <img :src="getActiveImage()" :style="`transform: translate(${translateX}px, ${translateY}px)`" alt="Selected Image" class="w-full h-full lg:min-w-330 lg:max-w-[330px]">
         </div>
       </div>
