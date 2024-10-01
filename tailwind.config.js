@@ -35,6 +35,10 @@ module.exports = {
     boxShadow:{
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);',
       'squares': '0px 15.34px 15.34px -6.14px rgba(50, 8, 106, 0.28)',
+      "abs1" : '0px 0.77px 0px 0px rgba(204, 204, 204, 0.5)', // X, Y, Blur, Spread, Color,
+      "abs2" : '0px -0.77px 0px 0px rgba(204, 204, 204, 0.5)', // X, Y, Blur, Spread, Color,
+      "abs3" : '0.77px 0px 0px 0px rgba(204, 204, 204, 0.5)', // X, Y, Blur, Spread, Color,
+      "abs4" : '0.77px 0px 0px 0px rgba(204, 204, 204, 0.5)', // X, Y, Blur, Spread, Color,
     },
     extend: {
       animation: {
