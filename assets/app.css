@@ -708,6 +708,9 @@ video {
 .max-w-\[43rem\] {
   max-width: 43rem;
 }
+.flex-1 {
+  flex: 1 1 0%;
+}
 .basis-2 {
   flex-basis: 0.5rem;
 }
@@ -791,6 +794,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-5 {
+  gap: 1.25rem;
 }
 .overflow-x-hidden {
   overflow-x: hidden;
