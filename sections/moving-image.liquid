@@ -1,0 +1,86 @@
+<div class="">
+  <section class="flex-col">
+    <div class="flex-col content-start items-start">
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.50PM.png?v=1726878666" alt="" class="src">
+      </div>
+      <div class="flex-col">
+        <div><img src="{{ 'dollar.png' | asset_img_url }}" alt="" class="w-3 h-4"></div>
+        <div class="square-small animate-move-vertical bg-purple-600 w-24 h-24 rounded-lg"></div>
+      </div>
+      <div class="flex-col justify-center items-start">
+        <div class="square-large animate-move-vertical-2 bg-purple-300 w-32 h-32 rounded-lg"></div>
+        <div><img src="{{ 'dollar.png' | asset_img_url }}" alt="" class="w-4 h-5"></div>
+      </div>
+    </div>
+    <div class="flex-col">
+      <div><span>Start making</span> money from all your returns</div>
+      <div>Built for shopify merchants of all sizes.</div>
+      <div class="flex">
+        <div>but1</div>
+        <div>but2</div>
+      </div>
+    </div>
+    <img src="{{ 'bg-mob.svg' | asset_img_url }}" alt="" class="absolute filter-invis-mob left-9 -z-10">
+  </section>
+  {% render 'site-nav' %}
+  <style>
+    .filter-invis-mob{
+      filter: linear-gradient(to right, rgba(166, 136, 202, 0) 0%, #E040F9 13%, #FCF9FF 100%)
+    }
+  </style>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Image2",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image 233"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Image alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Hero image + text block</p>"
+      }, {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Image",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

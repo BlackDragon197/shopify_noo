@@ -33,7 +33,7 @@ module.exports = {
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
     },
     extend: {
-      
+
     },
     screens: {
       'xs': '375px',
@@ -42,7 +42,6 @@ module.exports = {
       'lg': '1280px',
       'xl': '1440px',
     },
-
   },
   plugins: [],
 }
