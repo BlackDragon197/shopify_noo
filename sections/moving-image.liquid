@@ -75,9 +75,6 @@
     </div>
     <div class="absolute filter-invis-mob left-9 -z-10">
       {% assign filename = "bg-mob.png" %}
-      {{ filename | file_img_url:  "800x" }}
-      {{ filename | asset_img_url: "800x" }}
-
       <img src="{{ filename | file_img_url: "800x" }}" alt="">
     </div>
   </section>
