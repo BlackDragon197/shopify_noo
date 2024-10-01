@@ -16,6 +16,10 @@ module.exports = {
       "futura": "Futura PT",
       "montserrat": "'Montserrat', sans-serif",
     },
+    borderWidth:{
+      'selected': '1.17px solid black',
+      'default': '0.57px solid #CCD6E0'
+    },
     maxWidth:{
       '1410': '1410px',
       '380': '380px',
