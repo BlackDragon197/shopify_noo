@@ -6,9 +6,16 @@
           'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.50PM.png?v=1726878666',
           'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.37PM.png?v=1726878666'
       ],
+      colors: {
+            1: 'Brown',
+            2: 'Fennel-seed'
+        },
       getActiveImage() {
           return this.activeBlock === 1 ? this.images[0] : this.images[1];
       },
+      getColorText() {
+            return this.colors[this.activeBlock];
+        },
       selectBlock(blockNumber) {
           this.activeBlock = blockNumber;
       }
@@ -41,7 +48,7 @@
           The perfect boxy-fit sweater, The Boxy Sweater in Everyday Cotton is a layering essential. Featuring a chunky rib stitch at the crew neckline, along the hem, and sleeve cuffs, it has dropped shoulders for a relaxed edge. It's made with 100% organic cotton, and designed to be styled solo or easily topped with a blazer or cardigan
         </div>
         <div class="text-text-blue2 text-base mb-2">
-          Color: Fennel-seed
+          Color: <span x-text="getColorText()"></span>
         </div>
         <div class="flex gap-2 mb-4">
           <div @click="selectBlock(1)" :class="activeBlock === 1 ? 'border-selected border-black' : 'border-default border-slate-300'" class="w-5 h-5 p-[2.5px] rounded-12">
