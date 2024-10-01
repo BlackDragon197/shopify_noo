@@ -682,6 +682,9 @@ video {
 .h-5 {
   height: 1.25rem;
 }
+.h-\[-webkit-fill-available\] {
+  height: -webkit-fill-available;
+}
 .min-h-\[16px\] {
   min-height: 16px;
 }
@@ -1239,6 +1242,10 @@ video {
 
   .sm\:w-9 {
     width: 2.25rem;
+  }
+
+  .sm\:w-auto {
+    width: auto;
   }
 
   .sm\:min-w-740 {
