@@ -1141,6 +1141,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.hover\:bg-\[\#341188\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 17 136 / var(--tw-bg-opacity));
+}
 @media (min-width: 375px) {
 
   .xs\:mx-7 {
@@ -1448,8 +1452,4 @@ video {
   .lg\:font-extrabold {
     font-weight: 800;
   }
-}
-
-.text-nowrap{
-  text-wrap: nowrap;
 }
