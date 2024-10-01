@@ -78,9 +78,9 @@
   <div class="overflow-hidden absolute w-full h-full filter-invis-mob -z-10"></div>
       <img src="{{ 'bg-mob.png' | asset_img_url: '800x' }}" alt="" class="right-8 absolute w-[802px] h-[758px] -z-10 min-w-[802px]">
     </div>
-  {% comment %} {% render 'site-nav' %} {% endcomment %}
+
   <style>
-    .filter-invis-mob::before{
+    .filter-invis-mob::after{
       width: 100%;
       height: 100%;
       position: absolute;
