@@ -573,6 +573,9 @@ video {
 .right-0 {
   right: 0px;
 }
+.-top-9 {
+  top: -2.25rem;
+}
 .right-8 {
   right: 2rem;
 }
