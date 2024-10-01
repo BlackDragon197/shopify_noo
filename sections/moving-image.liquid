@@ -75,10 +75,10 @@
     </div>
     <div class="absolute filter-invis-mob left-9 -z-10">
       {% assign filename = "bg-mob.png" %}
-      {{ filename | file_img_url:  "100x" }}
-      {{ filename | asset_img_url: "100x" }}
+      {{ filename | file_img_url:  "800x" }}
+      {{ filename | asset_img_url: "800x" }}
 
-      <img src="{{ 'bg-mob.png' | asset_img_url }}" alt="">
+      <img src="{{ filename | asset_img_url: "800x" }}" alt="">
     </div>
   </section>
   {% comment %} {% render 'site-nav' %} {% endcomment %}
