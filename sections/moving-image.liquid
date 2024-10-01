@@ -77,7 +77,7 @@
       {% assign filename = "bg-mob.png" %}
       {{ filename | file_img_url:  "100x" }}
       {{ filename | asset_img_url: "100x" }}
-      {{ filename }}
+      {{ filename | asset_img_url}}
       <img src="{{ 'bg-mob.png' | asset_img_url }}" alt="">
     </div>
   </section>
