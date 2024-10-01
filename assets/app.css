@@ -628,6 +628,9 @@ video {
 .grid {
   display: grid;
 }
+.contents {
+  display: contents;
+}
 .hidden {
   display: none;
 }
@@ -868,11 +871,11 @@ video {
 .text-center {
   text-align: center;
 }
-.font-montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
 .font-futura {
   font-family: Futura PT;
+}
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 .text-\[22px\] {
   font-size: 22px;
@@ -890,14 +893,14 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.font-black {
-  font-weight: 900;
-}
 .font-normal {
   font-weight: 400;
 }
 .font-extrabold {
   font-weight: 800;
+}
+.font-black {
+  font-weight: 900;
 }
 .font-bold {
   font-weight: 700;
@@ -1013,13 +1016,13 @@ video {
     font-family: Futura PT;
   }
 
-  .md\:text-\[40px\] {
-    font-size: 40px;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .md\:text-\[35px\] {
