@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "header_background_color": "#e59494",
@@ -51,7 +60,7 @@
           "announcement_bar_home_page_only": true,
           "announcement_bar_text": "test link",
           "announcement_bar_link": "",
-          "logo": "shopify:\/\/shop_images\/Vector.png",
+          "logo": "shopify://shop_images/Vector.png",
           "logo_max_width": 450,
           "menu": ""
         }
@@ -63,28 +72,19 @@
           "show_payment_icons": false
         }
       },
-      "165531059468e5c8e7": {
-        "type": "hero-section",
+      "moving_image_FThnPY": {
+        "type": "moving-image",
         "settings": {
-          "image": "shopify:\/\/shop_images\/Group_305.png",
           "layout": "left",
-          "title": "SAVE UP TO 55% ON NOOCUB<br> EGG-CELLENT EASTER DEALS OUT NOW",
-          "text": "<p>Hero image + text block<\/p>",
+          "title": "Heading",
+          "text": "<p>Hero image + text block</p>",
           "button_label": "",
           "button_link": ""
-        }
-      },
-      "1655418599ba041d04": {
-        "type": "featured-collection",
-        "settings": {
-          "title": "DON'T WAIT FOR THE EASTER BUNNY TO BRING YOURS! <br><span class=\"md:text-[40px] font-black font-montserrat md:font-futura md:font-bold\">ORDER NOOCUBE TODAY!<\/span>",
-          "collection": "main"
         }
       }
     },
     "content_for_index": [
-      "165531059468e5c8e7",
-      "1655418599ba041d04"
+      "moving_image_FThnPY"
     ]
   },
   "presets": {
