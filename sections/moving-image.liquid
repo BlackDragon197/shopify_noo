@@ -1,32 +1,32 @@
-<div class="">
+<div class="" x-data="{
+  activeBlock: 1,
+    images: [
+        'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.50PM.png?v=1726878666',
+        'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.37PM.png?v=1726878666'
+    ],
+    colors: {
+        1: 'Brown',
+        2: 'Fennel-seed'
+    },
+    mouseX: 0,
+    mouseY: 0,
+    getActiveImage() {
+        return this.activeBlock === 1 ? this.images[0] : this.images[1];
+    },
+    getColorText() {
+        return this.colors[this.activeBlock];
+    },
+    selectBlock(blockNumber) {
+        this.activeBlock = blockNumber;
+    },
+    handleMouseMove(event) {
+        // Invert movement: divide by a factor to reduce movement intensity
+        this.mouseX = (window.innerWidth / 2 - event.clientX) / 30;
+        this.mouseY = (window.innerHeight / 2 - event.clientY) / 30;
+    }
+}" @mousemove="handleMouseMove">
   <section class="flex flex-col m-7 ml-9 mr-8 font-sf font-normal sm:m-15 sm:mr-sm-sec sm:ml-sm-sec lg:flex-row-reverse lg:items-center">
-    <div class="flex flex-col content-start items-start gap-7 relative lg:w-1/2" x-data="{
-      activeBlock: 1,
-        images: [
-            'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.50PM.png?v=1726878666',
-            'https://cdn.shopify.com/s/files/1/0648/4606/9896/files/Screenshot2024-09-20at7.30.37PM.png?v=1726878666'
-        ],
-        colors: {
-            1: 'Brown',
-            2: 'Fennel-seed'
-        },
-        mouseX: 0,
-        mouseY: 0,
-        getActiveImage() {
-            return this.activeBlock === 1 ? this.images[0] : this.images[1];
-        },
-        getColorText() {
-            return this.colors[this.activeBlock];
-        },
-        selectBlock(blockNumber) {
-            this.activeBlock = blockNumber;
-        },
-        handleMouseMove(event) {
-            // Invert movement: divide by a factor to reduce movement intensity
-            this.mouseX = (window.innerWidth / 2 - event.clientX) / 30;
-            this.mouseY = (window.innerHeight / 2 - event.clientY) / 30;
-        }
-  }" @mousemove="handleMouseMove">
+    <div class="flex flex-col content-start items-start gap-7 relative lg:w-1/2" >
       <div class="w-[52%]">
         <!-- Image Display -->
         <div class="w-full h-full" :style="'transform: translate(' + mouseX + 'px, ' + mouseY + 'px)'">
