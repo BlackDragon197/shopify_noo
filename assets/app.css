@@ -1469,3 +1469,6 @@ video {
     font-weight: 800;
   }
 }
+.max-h-\[-webkit-fill-available\] {
+  max-height: -webkit-fill-available;
+}
