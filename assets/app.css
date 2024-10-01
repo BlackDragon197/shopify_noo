@@ -1398,6 +1398,10 @@ video {
 }
 @media (min-width: 1280px) {
 
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .lg\:text-\[1\.4rem\] {
     font-size: 1.4rem;
   }
