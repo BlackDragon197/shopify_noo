@@ -28,6 +28,8 @@ module.exports = {
     },
     borderRadius:{
       'rounded-3': '3px',
+      '5': '5px',
+      '8': '8px',
     },
     boxShadow:{
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
@@ -35,7 +37,7 @@ module.exports = {
     extend: {
       animation: {
         'move-vertical': 'moveVertical 5s ease-in-out infinite',
-        'move-vertical-pc': 'moveVerticalPC 5s ease-in-out infinite',
+        'move-vertical-2': 'moveVerticalPC 5s ease-in-out infinite',
       },
       keyframes: {
         moveVertical: {
