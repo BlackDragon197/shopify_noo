@@ -78,7 +78,7 @@
       {{ filename | file_img_url:  "800x" }}
       {{ filename | asset_img_url: "800x" }}
 
-      <img src="{{ filename | asset_img_url: "800x" }}" alt="">
+      <img src="{{ filename | file_img_url: "800x" }}" alt="">
     </div>
   </section>
   {% comment %} {% render 'site-nav' %} {% endcomment %}
