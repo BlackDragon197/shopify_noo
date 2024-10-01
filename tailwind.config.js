@@ -17,8 +17,8 @@ module.exports = {
       "montserrat": "'Montserrat', sans-serif",
     },
     borderWidth:{
-      'selected': '1.17px solid black',
-      'default': '0.57px solid #CCD6E0'
+      'selected': '1.17px',
+      'default': '0.57px'
     },
     maxWidth:{
       '1410': '1410px',
