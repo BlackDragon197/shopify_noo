@@ -36,27 +36,27 @@ module.exports = {
     },
     extend: {
       animation: {
-        'move-vertical': 'moveVertical 5s ease-in-out infinite',
-        'move-vertical-pc': 'moveVerticalPC 5s ease-in-out infinite',
-        'move-vertical2': 'moveVertical2 5s ease-in-out infinite',
-        'move-vertical-pc2': 'moveVerticalPC2 5s ease-in-out infinite',
+        'move-vertical': 'moveVertical 9s ease-in-out infinite',
+        'move-vertical-pc': 'moveVerticalPC 9s ease-in-out infinite',
+        'move-vertical2': 'moveVertical2 9s ease-in-out infinite',
+        'move-vertical-pc2': 'moveVerticalPC2 9s ease-in-out infinite',
       },
       keyframes: {
         moveVertical: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-15px)' }, // For mobile/tablet
+          '50%': { transform: 'translateY(-10px)' }, // For mobile/tablet
         },
         moveVerticalPC: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-25px)' }, // For desktop
+          '50%': { transform: 'translateY(-15px)' }, // For desktop
         },
         moveVertical2: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(15px)' }, // For mobile/tablet
+          '50%': { transform: 'translateY(10px)' }, // For mobile/tablet
         },
         moveVerticalPC2: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(25px)' }, // For desktop
+          '50%': { transform: 'translateY(15px)' }, // For desktop
         },
       },
       backgroundImage: {
