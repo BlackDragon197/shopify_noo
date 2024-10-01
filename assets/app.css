@@ -1398,8 +1398,16 @@ video {
 }
 @media (min-width: 1280px) {
 
-  .lg\:h-40 {
-    height: 10rem;
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:h-\[196px\] {
+    height: 196px;
   }
 
   .lg\:w-1\/2 {
