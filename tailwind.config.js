@@ -30,6 +30,7 @@ module.exports = {
       'rounded-3': '3px',
       '5': '5px',
       '8': '8px',
+      '12': '12px',
     },
     boxShadow:{
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);',
@@ -62,6 +63,10 @@ module.exports = {
       },
       backgroundImage: {
         'span-linear': 'linear-gradient(to top, #341087 52%, #A669EF 100%)',
+      },
+      colors: {
+        'text-blue': '#3D247A',
+        'text-blue2': '#341087',
       },
     },
     screens: {
