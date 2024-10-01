@@ -613,6 +613,9 @@ video {
 .mb-9 {
   margin-bottom: 2.25rem;
 }
+.mb-20 {
+  margin-bottom: 5rem;
+}
 .block {
   display: block;
 }
@@ -636,6 +639,9 @@ video {
 }
 .h-16 {
   height: 4rem;
+}
+.h-\[25\.5vw\] {
+  height: 25.5vw;
 }
 .h-4 {
   height: 1rem;
@@ -713,6 +719,9 @@ video {
 }
 .max-w-\[25\.5\%\] {
   max-width: 25.5%;
+}
+.flex-1 {
+  flex: 1 1 0%;
 }
 .basis-2 {
   flex-basis: 0.5rem;
