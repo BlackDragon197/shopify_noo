@@ -13,7 +13,7 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      "sf": "SF Pro Display",
+      "sf": "'SF Pro Display'",
       "montserrat": "'Montserrat', sans-serif",
     },
     borderWidth:{
