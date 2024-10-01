@@ -55,6 +55,10 @@ module.exports = {
         'move-vertical2': 'moveVertical2 9s ease-in-out infinite',
         'move-vertical-pc2': 'moveVerticalPC2 9s ease-in-out infinite',
       },
+      margin:{
+        '15': '60px',
+        'sm-sec': '85px'
+      },
       keyframes: {
         moveVertical: {
           '0%, 100%': { transform: 'translateY(0)' },

@@ -1,5 +1,5 @@
 <div class="">
-  <section class="flex flex-col mt-7 ml-9 mr-8 font-sf font-normal">
+  <section class="flex flex-col mt-7 ml-9 mr-8 font-sf font-normal sm:m-15 sm:mr-sm-sec sm:ml-sm-sec">
     <div class="flex flex-col content-start items-start gap-7 relative" x-data="{
       activeBlock: 1,
       images: [
@@ -40,27 +40,27 @@
           </div>
         </div>
       </div>
-      <div class="absolute top-20 right-0 rounded-12 p-4 bg-white max-w-[65.5%] shadow-combined">
-        <div class="text-transparent bg-span-linear bg-clip-text text-xl mb-3 font-bold">
+      <div class="absolute top-20 right-0 rounded-12 p-4 bg-white max-w-[65.5%] shadow-combined sm:top-40 sm:p5 sm:pr-[30px] sm:pl-[30px]">
+        <div class="text-transparent bg-span-linear bg-clip-text text-xl mb-3 font-bold sm:text-4xl sm:mb-5">
           Sweater in Everyday Cotton
         </div>
-        <div class="text-text-blue text-xs mb-4">
+        <div class="text-text-blue text-xs mb-4 sm:text-base sm:mb-8">
           The perfect boxy-fit sweater, The Boxy Sweater in Everyday Cotton is a layering essential. Featuring a chunky rib stitch at the crew neckline, along the hem, and sleeve cuffs, it has dropped shoulders for a relaxed edge. It's made with 100% organic cotton, and designed to be styled solo or easily topped with a blazer or cardigan
         </div>
         <div class="text-text-blue2 text-base mb-2">
           Color: <span x-text="getColorText()"></span>
         </div>
-        <div class="flex gap-2 mb-4">
-          <div @click="selectBlock(1)" :class="activeBlock === 1 ? 'border-selected border-black' : 'border-default border-slate-300'" class="w-5 h-5 p-[2.5px] rounded-12">
+        <div class="flex gap-2 mb-4 sm:mb-8">
+          <div @click="selectBlock(1)" :class="activeBlock === 1 ? 'border-selected border-black' : 'border-default border-slate-300'" class="w-5 h-5 p-[2.5px] rounded-80 sm:w-9 sm:h-9 sm:p-[4.5px]">
             <div class="rounded-12 bg-yellow-800 h-full"></div>
           </div>
-          <div @click="selectBlock(2)" :class="activeBlock === 2 ? 'border-selected border-black' : 'border-default border-slate-300'" class="w-5 h-5 p-[2.5px] rounded-12">
+          <div @click="selectBlock(2)" :class="activeBlock === 2 ? 'border-selected border-black' : 'border-default border-slate-300'" class="w-5 h-5 p-[2.5px] rounded-80 sm:w-9 sm:h-9 sm:p-[4.5px]">
             <div class="rounded-12 bg-lime-400 h-full"></div>
           </div>
         </div>
-        <div class="w-full rounded-80 bg-[#341188] pt-2 pb-2 flex justify-center items-center text-white text-base gap-[7px] font-bold">
+        <div class="w-full rounded-80 bg-[#341188] pt-2 pb-2 flex justify-center items-center text-white text-base gap-[7px] font-bold sm:pt-3 sm:pb-3 sm:text-xl sm:gap-3 sm:mb-4 sm:mt-4">
           Add to Cart
-          <div class="h-full min-h-[16px] w-[2px] rounded-12 bg-white"></div>
+          <div class="h-full min-h-[16px] w-[2px] rounded-12 bg-white sm:min-h-[20px]"></div>
           $40
         </div>
       </div>

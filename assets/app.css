@@ -1153,13 +1153,81 @@ video {
     left: 27.2rem;
   }
 
+  .sm\:top-40 {
+    top: 10rem;
+  }
+
+  .sm\:m-15 {
+    margin: 60px;
+  }
+
+  .sm\:mr-sm-sec {
+    margin-right: 85px;
+  }
+
+  .sm\:ml-sm-sec {
+    margin-left: 85px;
+  }
+
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:h-9 {
+    height: 2.25rem;
+  }
+
+  .sm\:min-h-\[20px\] {
+    min-height: 20px;
+  }
+
+  .sm\:w-9 {
+    width: 2.25rem;
+  }
+
   .sm\:min-w-740 {
     min-width: 740px;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .sm\:p-\[4\.5px\] {
+    padding: 4.5px;
   }
 
   .sm\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .sm\:pr-\[30px\] {
+    padding-right: 30px;
+  }
+
+  .sm\:pl-\[30px\] {
+    padding-left: 30px;
+  }
+
+  .sm\:pt-3 {
+    padding-top: 0.75rem;
+  }
+
+  .sm\:pb-3 {
+    padding-bottom: 0.75rem;
   }
 
   .sm\:text-\[35px\] {
@@ -1168,6 +1236,21 @@ video {
 
   .sm\:text-\[22px\] {
     font-size: 22px;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media (min-width: 1024px) {
