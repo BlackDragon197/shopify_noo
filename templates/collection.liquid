@@ -29,11 +29,7 @@
       <div>
         {% if product.featured_image != blank %}
           <a href="{{ product.url | within: collection }}">
-            {% include 'responsive-image' with
-              image: product.featured_image,
-              max_width: 700,
-              max_height: 800
-            %}
+            {% include 'responsive-image' with image, image: product.featured_image, max_width: 700, max_height: 800 %}
           </a>
         {% endif %}
 
@@ -100,3 +96,19 @@
     {% include 'pagination' %}
   {% endif %}
 {% endpaginate %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% include 'responsive-image' with
+                  image: product.featured_image,
+                  max_width: 700,
+                  max_height: 800
+                %}
+  to: "{% include 'responsive-image' with image, image: product.featured_image, max_width:
+    700, max_height: 800 %}"
+  position: 850..957
+{% endcomment %}

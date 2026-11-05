@@ -38,19 +38,11 @@
       </div>
 
       <div class="flex justify-center md:hidden featured-collection__image min-w-[45%]">
-        {% include 'responsive-image' with
-          image: product.featured_image,
-          max_width: 143,
-          max_height: 114
-        %}
+        {% include 'responsive-image' with image, image: product.featured_image, max_width: 143, max_height: 114 %}
       </div>
         {% else %}
         <div class="flex justify-center featured-collection__image min-w-[45%]">
-          {% include 'responsive-image' with
-            image: product.featured_image,
-            max_width: 143,
-            max_height: 114
-          %}
+          {% include 'responsive-image' with image, image: product.featured_image, max_width: 143, max_height: 114 %}
         </div>
         {% endif %}
       {% endif %}
@@ -133,3 +125,28 @@
     ]
   }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% include 'responsive-image' with
+              image: product.featured_image,
+              max_width: 143,
+              max_height: 114
+            %}
+  to: "{% include 'responsive-image' with image, image: product.featured_image, max_width:
+    143, max_height: 114 %}"
+  position: 1768..1875
+- from: |-
+    {% include 'responsive-image' with
+                image: product.featured_image,
+                max_width: 143,
+                max_height: 114
+              %}
+  to: "{% include 'responsive-image' with image, image: product.featured_image, max_width:
+    143, max_height: 114 %}"
+  position: 1999..2106
+{% endcomment %}

@@ -10,11 +10,7 @@
       <div class="flex items-center justify-center relative flex-col">
         <div class="relative md:hidden">
           {% if section.settings.image != blank %}
-            {% include 'responsive-image-mobile' with
-             image: section.settings.image,
-             image_class: "img",
-             max_width: 703,
-             max_height: 713 %}
+            {% include 'responsive-image-mobile' with image, image: section.settings.image, image_class: "img", max_width: 703, max_height: 713 %}
           {% else %}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
@@ -115,11 +111,7 @@
         </div>
         <div class="relative hidden md:block">
           {% if section.settings.image != blank %}
-            {% include 'responsive-image' with
-             image: section.settings.image,
-             image_class: "img",
-             max_width: 703,
-             max_height: 713 %}
+            {% include 'responsive-image' with image, image: section.settings.image, image_class: "img", max_width: 703, max_height: 713 %}
           {% else %}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
@@ -266,4 +258,28 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% include 'responsive-image-mobile' with
+                 image: section.settings.image,
+                 image_class: "img",
+                 max_width: 703,
+                 max_height: 713 %}
+  to: '{% include ''responsive-image-mobile'' with image, image: section.settings.image,
+    image_class: "img", max_width: 703, max_height: 713 %}'
+  position: 652..786
+- from: |-
+    {% include 'responsive-image' with
+                 image: section.settings.image,
+                 image_class: "img",
+                 max_width: 703,
+                 max_height: 713 %}
+  to: '{% include ''responsive-image'' with image, image: section.settings.image,
+    image_class: "img", max_width: 703, max_height: 713 %}'
+  position: 67425..67552
+{%- endcomment -%}

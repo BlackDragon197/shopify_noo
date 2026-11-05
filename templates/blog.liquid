@@ -44,11 +44,7 @@
 
     {% if article.image %}
       <a href="{{ article.url }}">
-        {% include 'responsive-image' with
-          image: article.image,
-          max_width: 1024,
-          max_height: 1024
-        %}
+        {% include 'responsive-image' with image, image: article.image, max_width: 1024, max_height: 1024 %}
       </a>
     {% endif %}
 
@@ -94,3 +90,19 @@
   {% endif %}
 
 {% endpaginate %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% include 'responsive-image' with
+              image: article.image,
+              max_width: 1024,
+              max_height: 1024
+            %}
+  to: "{% include 'responsive-image' with image, image: article.image, max_width:
+    1024, max_height: 1024 %}"
+  position: 1069..1169
+{% endcomment %}
